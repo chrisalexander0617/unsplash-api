@@ -1,0 +1,87 @@
+<style>
+    body {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top:100px;
+    }
+
+
+    form {
+        margin:0 auto;
+        text-align: center;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    input {
+        padding:10px;
+        font-size:20px;
+        outline:none;
+        margin-bottom:30px;
+        width: 100%;
+        border:none;
+        background-color: rgb(246, 246, 246);
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    #button, button
+    {
+        border:none;
+        background:rgb(241, 27, 20);
+        color:white;
+        width:300px;
+        cursor:pointer;
+        padding:10px;
+        border-radius: 30px;
+        margin-bottom:30px;
+    }
+
+    .image-container .box
+    {
+        display:inline-block;
+        width:33%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .image-container img
+    {   
+        position: relative;
+        width: 100%;
+        height:auto
+    }
+</style>
+
+
+<h1>Results</h1>
+
+<form action="/" method="GET">
+<button type="submit">Search again</button>
+</form>
+
+<div class="image-container">
+    <div class="box">
+       <img src="<%= data['results'][1]['urls']['regular'] %>" alt="">
+    </div>
+    <div class="box">
+        <img src="<%= data['results'][2]['urls']['regular'] %>" alt="">
+    </div>
+    <div class="box">
+        <img src="<%= data['results'][3]['urls']['regular'] %>" alt="">
+    </div>
+</div>
+<div class="image-container">
+    <div class="box">
+       <img src="<%= data['results'][0]['urls']['regular'] %>" alt="">
+    </div>
+    <div class="box">
+        <img src="<%= data['results'][4]['urls']['regular'] %>" alt="">
+    </div>
+    <div class="box">
+        <img src="<%= data['results'][8]['urls']['regular'] %>" alt="">
+    </div>
+</div>

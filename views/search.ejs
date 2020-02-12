@@ -1,0 +1,51 @@
+<style>
+    body {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        text-align: center;
+        padding-top:100px;
+    }
+
+
+    form {
+        margin:0 auto;
+        text-align: center;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    input {
+        padding:10px;
+        font-size:20px;
+        outline:none;
+        margin-bottom:30px;
+        width: 100%;
+        border:none;
+        background-color: rgb(246, 246, 246);
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    #button
+    {
+        border:none;
+        background:rgb(241, 27, 20);
+        color:white;
+        width:300px;
+        cursor:pointer;
+        padding:10px;
+        border-radius: 30px;
+    }
+</style>
+
+
+
+<h1>Find-a-Pic</h1>
+<p>Look at some beautiful pictures!</p>
+
+<form action="/results" method="GET">
+    <input id="search" type="text" name="search" required placeholder="Birds, Minimal, Street . . etc">
+    <input id="button" type="submit" name="submit">
+</form>
